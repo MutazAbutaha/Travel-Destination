@@ -1,10 +1,15 @@
+
+import "./Tours.css"
+
+
 function Tours(props){
+    
     return(
-         <>
-         <h2>{props.name}</h2>
+
+         <div className="card">
+         <h3>{props.name} </h3>
          <img src={props.image} alt={props.name}/>
-         <br  style={{width:50,color:"black"}}/>
-         </>
+         </div>
     )
 };
 
