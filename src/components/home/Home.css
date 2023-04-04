@@ -3,6 +3,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 2%;
+    text-decoration: none;
+
   }
 
 body {
@@ -13,5 +15,10 @@ body {
     color: #0e0e0f;
     font-family: Tahoma;
     font-size: 16px;
+    text-decoration: none;
+}
+
+#link {
+  text-decoration: none;
 }
 

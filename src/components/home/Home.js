@@ -1,7 +1,9 @@
+
 import Header from "../header/Header";
 import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../Navbar/Navbar";
+import { Link } from "react-router-dom";
 import './Home.css'
 
 function Home(props) {
@@ -14,7 +16,11 @@ function Home(props) {
             {
                 data.map(Element => {
                     return (
-                        <Tours  name={Element.name} key={Element.id} image={Element.image} />
+                        <div >
+                         <Link id="link" to={`/city/${Element.id}`}>
+                         <Tours key={Element.id}   name={Element.name}  image={Element.image} />
+                         </Link>
+                        </div>
                     )
                 })
             }
